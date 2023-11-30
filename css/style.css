@@ -171,11 +171,13 @@ body {
 
 #about{
     height: 100vh;
-    width: 100vw;
+    
     background: var(--color-blue);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 10px;
    
 }
 
@@ -199,8 +201,8 @@ body {
 
 .about-img img{
     width: 70%;
-    height: 80%;
-    border-radius: 50%;
+    height: 100%;
+    
 
 }
 
@@ -224,6 +226,7 @@ body {
 .important{
     font-weight: bold;
     color: var(--color-calico);
+    font-style: italic;
 }
 
 
@@ -333,6 +336,13 @@ body {
     gap: 10px;
 }
 
+.card-text p{
+    font-size: 15px;
+    color: var(--color-blue);
+    font-weight: bolder;
+    font-style: italic;
+}
+
 .card-btn{
     gap: 15px;
     display: flex;
@@ -426,7 +436,7 @@ body {
     color: var(--color-calico);
     font-size: 4rem;
     font-weight: bold;
-    padding-top: 1%;
+    padding-bottom: 3%;
 }
 
 
@@ -451,11 +461,31 @@ body {
 }
 
 
+/*1000px*/
 
+@media screen and (max-width: 1000px) {
+    .about-text{
+        color: var(--color-white);
+        width: 50%;
+        font-size: 1.8rem;
+        text-align: justify;
+        text-justify: inter-word;
+    
+     
+    }
 
-@media screen and (max-width: 1200px) {
-    #header {
-        padding: 2% 3% 2% 3%;
+    .about-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        
+        
+    }
+    
+    .about-img img{
+        width: 70%;
     }
 }
 
@@ -475,13 +505,6 @@ body {
         height: 100%;
         
         
-    }
-    
-    .about-img img{
-        width: 70%;
-        height: 80%;
-        border-radius: 50%;
-    
     }
     
     
@@ -520,6 +543,26 @@ body {
 
 }
 
+/*750px*/
+@media screen and (max-width: 750px) {
+
+    .about-text{
+        font-size: 1.4rem;   
+    }
+
+    .about-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;  
+    }
+    
+    .about-img img{
+        width: 80%;
+    }
+}
+
 
 
 /*600px*/
@@ -541,7 +584,6 @@ body {
 
     .about-content {
         width: 100%;
-        height: auto;
     }
     
 
@@ -549,28 +591,20 @@ body {
 
         width: 40%;
         
-        
     }
-    
+
     .about-img img{
-        width: 70%;
-        height: 80%;
-        border-radius: 50%;
-    
+        width: 80%;
     }
     
     
     
     .about-text{
-        font-size: 1.3rem;  
+        font-size: 1.2rem;  
     }
     
 
-    .about-img img {
-        width: 80%;
-        height: auto;
-        border-radius: 50%;
-    }
+   
 
     /*Skills*/
     .techs div p{     
@@ -637,27 +671,15 @@ body {
         
     }
     
-    .about-img img{
-        width: 70%;
-        height: 80%;
-        border-radius: 50%;
-    
-    }
-    
-    
     
     .about-text{
         font-size: 1rem;  
     }
     
-    .title{
-        font-size: 2rem;
-    }
+   
 
     .about-img img {
-        width: 80%;
         height: auto;
-        border-radius: 50%;
     }
 
     /*Skills*/
