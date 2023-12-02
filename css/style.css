@@ -170,22 +170,23 @@ body {
 
 
 #about{
-    height: 100vh;
-    
+    height: 100vh;  
     background: var(--color-blue);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5%;
    
 }
 
 .about-content{
     display: flex;
     align-items: center;
-    width: 70%;
-    height: 50%;
+    width: 80%;
+    justify-content: space-around;
+    padding: 0 5% 0 5%;
+    
 }
 
 
@@ -200,9 +201,9 @@ body {
 }
 
 .about-img img{
-    width: 70%;
-    height: 100%;
+  
     
+    box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.75);
 
 }
 
@@ -211,16 +212,11 @@ body {
 .about-text{
     color: var(--color-white);
     width: 50%;
-    font-size: 2.2rem;
+    font-size: 3rem;
     text-align: justify;
     text-justify: inter-word;
 
  
-}
-
-
-.about-text h1{
-    padding-bottom: 3%;
 }
 
 .important{
@@ -379,7 +375,7 @@ body {
 
 
 #skills{
-    height: 80vh;
+    height: 93vh;
     background: var(--color-blue);
     display: flex;
     flex-direction: column;
@@ -434,9 +430,12 @@ body {
 
 .title{
     color: var(--color-calico);
+    
     font-size: 4rem;
     font-weight: bold;
     padding-bottom: 3%;
+    
+    
 }
 
 
@@ -461,13 +460,61 @@ body {
 }
 
 
+
+
+
+/*1200px*/
+
+@media screen and (max-width: 1200px) {
+    
+
+    .about-content{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        
+        
+    }
+
+
+    .about-text{
+
+       
+        width: 50%;
+        font-size: 2.2rem;
+        
+    
+     
+    }
+
+
+
+
+    .about-img{
+        
+        width: 50%;
+        height: 100%;
+        
+        
+    }
+    
+    .about-img img{
+      
+        width: 80%;
+        height: 90%;
+    
+    }
+
+}
+
+
 /*1000px*/
 
 @media screen and (max-width: 1000px) {
     .about-text{
         color: var(--color-white);
         width: 50%;
-        font-size: 1.8rem;
+        font-size: 2rem;
         text-align: justify;
         text-justify: inter-word;
     
@@ -484,9 +531,7 @@ body {
         
     }
     
-    .about-img img{
-        width: 70%;
-    }
+    
 }
 
 
@@ -522,6 +567,12 @@ body {
     
     .about-text h1{
         padding-bottom: 3%;
+    }
+
+    .about-img img{
+      width: 80% ;
+      height: 100% ;
+    
     }
 
 
@@ -594,9 +645,11 @@ body {
     }
 
     .about-img img{
-        width: 80%;
-    }
-    
+        width: 200px ;
+        height: 200px ;
+      
+      }
+  
     
     
     .about-text{
@@ -627,6 +680,12 @@ body {
         grid-auto-columns: calc(100%);
     }
 
+    .about-img img{
+        width: 150px ;
+        height: 150px ;
+      
+      }
+  
 }
 
 
@@ -660,7 +719,7 @@ body {
 
     .about-content {
         width: 100%;
-        height: auto;
+        
     }
     
 
